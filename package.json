@@ -14,6 +14,9 @@
       "default": "./dist/src/*.js"
     }
   },
+  "publishConfig": {
+    "access": "restricted"
+  },
   "files": [
     "dist/src",
     "LICENSE",
@@ -29,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/revdotcom/revai-node-sdk.git"
+    "url": "git+https://github.com/mazedesignhq/revai-node-sdk.git"
   },
   "keywords": [
     "rev_ai",
