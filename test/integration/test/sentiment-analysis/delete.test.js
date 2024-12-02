@@ -1,6 +1,6 @@
 const clientHelper = require('../../src/client-helper');
-const RevAiApiError = require('../../../../dist/src/models/RevAiApiError').RevAiApiError;
-const JobStatus = require('../../../../dist/src/models/JobStatus').JobStatus;
+const RevAiApiError = require('../../../../dist/models/RevAiApiError').RevAiApiError;
+const JobStatus = require('../../../../dist/models/JobStatus').JobStatus;
 const client = clientHelper.getSentimentAnalysisClient();
 
 let jobId;

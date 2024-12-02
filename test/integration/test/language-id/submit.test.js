@@ -1,7 +1,7 @@
 const fs = require('fs');
 const clientHelper = require('../../src/client-helper');
-const JobStatus = require('../../../../dist/src/models/JobStatus').JobStatus;
-const JobType = require('../../../../dist/src/models/JobType').JobType;
+const JobStatus = require('../../../../dist/models/JobStatus').JobStatus;
+const JobType = require('../../../../dist/models/JobType').JobType;
 const client = clientHelper.getLanguageIdClient();
 
 test('Can submit job', async () => {

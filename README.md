@@ -84,6 +84,7 @@ const job = await client.submitJobLocalFile("./path/to/file.mp4", {
 ```
 
 You can also submit a job to be handled by a human transcriber using our [Human Transcription](https://docs.rev.ai/api/asynchronous/transcribers/#human-transcription) option.
+
 ```javascript
 const job = await client.submitJobLocalFile("./path/to/file.mp4", {
     transcriber: "human",
@@ -114,10 +115,12 @@ Both the `source_config` and `notification_config` job options support using a c
 This optional argument should be in the format `{ "Authorization": "TokenScheme TokenValue" }`
 
 Example:
+
 ```
 var notificationConfig = { url: 'https://example.com', auth_headers: { "Authorization": "Bearer <token>" } };
 ```
-For more information see https://github.com/revdotcom/revai-node-sdk/blob/develop/examples/async_transcribe_media_from_url.js
+
+For more information see <https://github.com/revdotcom/revai-node-sdk/blob/develop/examples/async_transcribe_media_from_url.js>
 
 ### Checking your job's status
 
@@ -157,7 +160,6 @@ await client.deleteJob(job.id);
 
  All data related to the job, such as input media and transcript, will be permanently deleted.
  A job can only by deleted once it's completed (either with success or failure).
-
 
 ### Getting your transcript
 
@@ -257,6 +259,7 @@ You can now submit any custom vocabularies independently through the new CustomV
 Below you can see an example of how to create, submit and check on the status and other associated information of your submitted custom vocabulary!
 
 For more information, check out our [examples](https://github.com/revdotcom/revai-node-sdk/tree/develop/examples).
+
 ```javascript
 import { RevAiCustomVocabulariesClient } from 'revai-node-sdk';
 
@@ -290,5 +293,5 @@ After cloning and installing required npm modules, you should follow these pract
     4. `build-examples` performs the same action as `build` and in addition, copies the `src` to the `node_modules` directory in `examples` such that you can test examples with local changes.
 2. Add any relevant test logic if you add or modify any features in the source code and check that the tests pass using the scripts mentioned above.
 3. Update the examples provided to illustrate any relevant changes you made, and check that they work properly with your changed local `revai-node-sdk`.
-    * One way to use your changed local package in the examples is to copy the output of the `build` script into the `examples/node_modules/revai-node-sdk`. On Unix, this can be simply done with the following command when in the root directory: `$ cp -r dist/src examples/node_modules/revai-node-sdk/`.
+    * One way to use your changed local package in the examples is to copy the output of the `build` script into the `examples/node_modules/revai-node-sdk`. On Unix, this can be simply done with the following command when in the root directory: `$ cp -r dist examples/node_modules/revai-node-sdk/`.
 4. Update the documentation to reflect any relevant changes and improve the development section.

@@ -1,5 +1,5 @@
 const clientHelper = require('../../src/client-helper');
-const JobStatus = require('../../../../dist/src/models/JobStatus').JobStatus;
+const JobStatus = require('../../../../dist/models/JobStatus').JobStatus;
 const client = clientHelper.getLanguageIdClient();
 
 let jobId;

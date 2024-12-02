@@ -1,12 +1,12 @@
 const configHelper = require('./config-helper');
-const revaiAsync = require('../../../dist/src/api-client');
-const revaiCustomVocabularies = require('../../../dist/src/custom-vocabularies-client');
-const revaiSentimentAnalysis = require('../../../dist/src/sentiment-analysis-client');
-const revaiLanguageId = require('../../../dist/src/language-id-client');
-const revaiStreaming = require('../../../dist/src/streaming-client');
-const revaiTopicExtraction = require('../../../dist/src/topic-extraction-client');
-const JobStatus = require('../../../dist/src/models/JobStatus').JobStatus;
-const JobType = require('../../../dist/src/models/JobType').JobType;
+const revaiAsync = require('../../../dist/api-client');
+const revaiCustomVocabularies = require('../../../dist/custom-vocabularies-client');
+const revaiSentimentAnalysis = require('../../../dist/sentiment-analysis-client');
+const revaiLanguageId = require('../../../dist/language-id-client');
+const revaiStreaming = require('../../../dist/streaming-client');
+const revaiTopicExtraction = require('../../../dist/topic-extraction-client');
+const JobStatus = require('../../../dist/models/JobStatus').JobStatus;
+const JobType = require('../../../dist/models/JobType').JobType;
 
 module.exports = {
     getAsyncClient: (apiKey = configHelper.getApiKey()) => {

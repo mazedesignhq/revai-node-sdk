@@ -1,5 +1,5 @@
 const clientHelper = require('../src/client-helper');
-const CustomVocabularyStatus = require('../../../dist/src/models/CustomVocabularyStatus').CustomVocabularyStatus;
+const CustomVocabularyStatus = require('../../../dist/models/CustomVocabularyStatus').CustomVocabularyStatus;
 const client = clientHelper.getCustomVocabulariesClient();
 
 test('Can submit custom vocabulary', async () => {

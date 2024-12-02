@@ -4,27 +4,27 @@
   "description": "Rev AI makes speech applications easy to build!",
   "exports": {
     ".": {
-      "require": "./dist/src/index.js",
-      "types": "./dist/src/index.d.ts",
-      "default": "./dist/src/index.js"
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./*": {
-      "require": "./dist/src/*.js",
-      "types": "./dist/src/*.d.ts",
-      "default": "./dist/src/*.js"
+      "require": "./dist/*.js",
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
     }
   },
   "publishConfig": {
     "access": "restricted"
   },
   "files": [
-    "dist/src",
+    "dist",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
     "build": "tsc",
-    "build-examples": "tsc && cd ./examples && npm install && rm -r ./node_modules/revai-node-sdk/src && cp -r ../dist/src ./node_modules/revai-node-sdk",
+    "build-examples": "tsc && cd ./examples && npm install && rm -r ./node_modules/revai-node-sdk/src && cp -r ../dist ./node_modules/revai-node-sdk",
     "unit-test": "jest -c ./jest.config.unit.js",
     "integration-test": "jest -c ./jest.config.integration.js && node ./test/integration/test/stream.js",
     "lint": "eslint -c .eslintrc.js --ext .ts \".\"",

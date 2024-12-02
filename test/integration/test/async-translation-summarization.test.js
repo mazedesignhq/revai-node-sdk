@@ -1,11 +1,11 @@
 const fs = require('fs');
 const clientHelper = require('../src/client-helper');
-const { SummarizationJobStatus } = require('../../../dist/src/models/async/SummarizationJobStatus');
-const { SummarizationFormattingOptions } = require('../../../dist/src/models/async/SummarizationFormattingOptions');
-const { TranslationJobStatus } = require('../../../dist/src/models/async/TranslationJobStatus');
-const { JobStatus } = require('../../../dist/src/models/JobStatus');
-const { SummarizationModel } = require('../../../dist/src/models/async/SummarizationModel');
-const { TranslationModel } = require('../../../dist/src/models/async/TranslationModel');
+const { SummarizationJobStatus } = require('../../../dist/models/async/SummarizationJobStatus');
+const { SummarizationFormattingOptions } = require('../../../dist/models/async/SummarizationFormattingOptions');
+const { TranslationJobStatus } = require('../../../dist/models/async/TranslationJobStatus');
+const { JobStatus } = require('../../../dist/models/JobStatus');
+const { SummarizationModel } = require('../../../dist/models/async/SummarizationModel');
+const { TranslationModel } = require('../../../dist/models/async/TranslationModel');
 
 test('async translation/summarization submit local file', async () => {
     const client = clientHelper.getAsyncClient();

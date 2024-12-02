@@ -1,7 +1,7 @@
 /* eslint-disable import/order */
-const { AudioConfig } = require('../../../dist/src/models/streaming/AudioConfig');
-const { SessionConfig } = require('../../../dist/src/models/streaming/SessionConfig');
-const { CustomVocabularyStatus } = require('../../../dist/src/models/CustomVocabularyStatus');
+const { AudioConfig } = require('../../../dist/models/streaming/AudioConfig');
+const { SessionConfig } = require('../../../dist/models/streaming/SessionConfig');
+const { CustomVocabularyStatus } = require('../../../dist/models/CustomVocabularyStatus');
 const clientHelper = require('../src/client-helper');
 
 const fs = require('fs');
