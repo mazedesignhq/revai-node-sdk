@@ -37,8 +37,15 @@
   "homepage": "https://github.com/revdotcom/revai-node-sdk#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "form-data": "^2.3.3",
+    "form-data": "^2.3.3"
+  },
+  "peerDependencies": {
     "websocket": "^1.0.34"
+  },
+  "peerDependenciesMeta": {
+    "websocket": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/form-data": "^2.2.1",
@@ -53,7 +60,8 @@
     "eslint-plugin-import": "^2.26.0",
     "jest": "^24.8.0",
     "ts-jest": "^24.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "websocket": "^1.0.34"
   },
   "jest": {
     "projects": [
