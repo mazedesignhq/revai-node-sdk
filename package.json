@@ -1,6 +1,6 @@
 {
   "name": "@mazeapp/revai-node-sdk",
-  "version": "3.8.6",
+  "version": "3.9.0",
   "description": "Rev AI makes speech applications easy to build!",
   "exports": {
     ".": {
