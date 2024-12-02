@@ -2,7 +2,18 @@
   "name": "revai-node-sdk",
   "version": "3.8.6",
   "description": "Rev AI makes speech applications easy to build!",
-  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    },
+    "./*": {
+      "require": "./dist/src/*.js",
+      "types": "./dist/src/*.d.ts",
+      "default": "./dist/src/*.js"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "build-examples": "tsc && cd ./examples && npm install && rm -r ./node_modules/revai-node-sdk/src && cp -r ../dist/src ./node_modules/revai-node-sdk",
