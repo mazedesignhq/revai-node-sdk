@@ -60,5 +60,9 @@
       "./jest.config.unit.js",
       "./jest.config.integration.js"
     ]
+  },
+  "packageManager": "npm@10.9.0",
+  "engines": {
+    "node": "^22.0.0"
   }
 }
