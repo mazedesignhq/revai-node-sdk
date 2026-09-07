@@ -1,5 +1,5 @@
 {
-    "dependencies": {
-        "revai-node-sdk": "latest"
-    }
+  "dependencies": {
+    "revai-node-sdk": "file:.."
+  }
 }
